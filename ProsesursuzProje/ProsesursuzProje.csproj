@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{929C3A91-541A-402B-B2E2-5FC43A444910}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProsesursuzProje</RootNamespace>
+    <AssemblyName>ProsesursuzProje</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapor.Designer.cs">
+      <DependentUpon>Rapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Satıcılar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Satıcılar.Designer.cs">
+      <DependentUpon>Satıcılar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriler.Designer.cs">
+      <DependentUpon>musteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="siparişler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="siparişler.Designer.cs">
+      <DependentUpon>siparişler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Urunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Urunler.Designer.cs">
+      <DependentUpon>Urunler.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapor.resx">
+      <DependentUpon>Rapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Satıcılar.resx">
+      <DependentUpon>Satıcılar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriler.resx">
+      <DependentUpon>musteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="siparişler.resx">
+      <DependentUpon>siparişler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Urunler.resx">
+      <DependentUpon>Urunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cafelogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PASTO_LYE_LOGO-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\66.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PASTO_LYE_LOGO-31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\666.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Basic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-Glass_exit_sign.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\334-3341474_sign-up-button-green-sign-up-button-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51-510307_cupcake-bakery-logo-cake-bakery-logo-png-transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-checklist-shopping-list-checklist-5ac04c5ed2edd9.556017751522551902864.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-free-content-adding-s-blue-logo-adding-cliparts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-button-update-button-trademark-photography-area.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-3695104_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25560-middle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-checklist-shopping-list-checklist-5ac04c5ed2edd9.5560177515225519028641.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cafe-4075492_960_720.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-858256644-2048x2048.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-checklist-shopping-list-checklist-5ac04c5ed2edd9.5560177515225519028642.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
